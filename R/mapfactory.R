@@ -71,25 +71,25 @@
 }
 
 .is_zip_code <- function(s) {
-  return (grepl("\\d{5}", s))
+  return (grepl("^\\d{5}$", s))
 }
 
 .is_city_fips <- function(s) {
-  return (grepl("\\d{7}", s))
+  return (grepl("^\\d{7}$", s))
 }
 
 .is_county_fips <- function(s) {
-  return (grepl("\\d{5}", s))
+  return (grepl("^\\d{5}$", s))
 }
 
 .is_state_fips <- function(s) {
-  return (grepl("\\d{2}", s))
+  return (grepl("^\\d{2}$", s))
 }
 
 .is_state_abbrv <- function(s) {
-  return (grepl("[A-Z]{2}", s))
+  return (grepl("^[A-Z]{2}$", s))
 }
 
 .is_school_district_fips <- function(s) {
-  return (grepl("\\d{7}", s))
+  return (grepl("^\\d{7}$", s))
 }
