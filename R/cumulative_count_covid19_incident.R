@@ -29,7 +29,7 @@
 #' # Count the cumulative count of COVID-19 incidents 10 days ago from today
 #' cumulative_count_covid19_incident(states, date=Sys.Date()-10)
 cumulative_count_covid19_incident <- function(geo_names,
-                                              location_type=c(NA, "zip", "county", "state"),
+                                              location_type=c(NA, "city", "zip", "county", "state"),
                                               start_date="2020-01-01",
                                               end_date="2020-03-31",
                                               date=NA) {
